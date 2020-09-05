@@ -58,18 +58,14 @@ const Header = ({ state }) => {
                 // Check if the link matched the current page url
                 const isCurrentPage = state.router.link === link;
                 return (
-                  <>
-                    {/* If link url is the current page, add `aria-current` for a11y */}
-                    <Link
-                      _key={name}
-                      key={name}
-                      link={link}
-                      aria-current={isCurrentPage ? "page" : undefined}
-                      tw="text-base leading-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150"
-                    >
-                      {name}
-                    </Link>
-                  </>
+                  <Link
+                    key={name}
+                    link={link}
+                    aria-current={isCurrentPage ? "page" : undefined}
+                    tw="text-base leading-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150"
+                  >
+                    {name}
+                  </Link>
                 );
               })}
             </nav>
