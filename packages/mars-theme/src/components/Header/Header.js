@@ -1,7 +1,7 @@
 /**
  * External dependencies
  */
-import tw from "twin.macro";
+import "twin.macro";
 
 /**
  * React / Frontity dependencies
