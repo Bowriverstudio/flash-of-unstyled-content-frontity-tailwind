@@ -22,11 +22,11 @@ import logo from "../../../assets/logo.png";
  */
 const Header = ({ state }) => {
   return (
-    <div tw="z-0 relative bg-white">
-      <div tw="relative z-10 shadow">
-        <div tw="max-w-7xl mx-auto flex justify-between items-center px-4 py-5 sm:px-6 sm:py-4 lg:px-8 md:justify-start md:space-x-10">
+    <div tw="z-0 relative flex-shrink-0 bg-white">
+      <div tw=" relative z-10 flex-shrink-0 shadow">
+        <div tw="max-w-7xl flex-shrink-0 mx-auto flex justify-between items-center px-4 py-5 sm:px-6 sm:py-4 lg:px-8 md:justify-start md:space-x-10">
           <div>
-            <a href="#" tw="flex">
+            <a href="#" tw="w-16 flex-shrink-0">
               <Image src={logo} alt="Logo" tw="h-8 w-auto sm:h-10" />
             </a>
           </div>
